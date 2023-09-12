@@ -1,6 +1,25 @@
-from main import data_summary
+from main import read_file, summary
 
 
-def test_func():
-    assert data_summary('https://www.dropbox.com/s/x2awp0e9znsyub7/egrid2016.csv?dl=1')==4855.0
+def test_read_file():
+    assert read_file('imdb_top_1000.csv')!=FileNotFoundError()
+    assert len(read_file('imdb_top_1000.csv'))==1000
+
+def test_describe():
+    describe=read_file('imdb_top_1000.csv')
+    assert describe['IMDB_Rating']['mean']==7.9493
+    assert describe['IMDB_Rating']['max']==9.3
+
+def test_graph():
+    df=read_file(file_name)
+    plt.hist(df['IMDB_Rating'])
+    plt.show()
+
+
+
+if __name__ == "__main__":
+    test_read_file()
+    test_describe()
+    test_graph()
+
 
