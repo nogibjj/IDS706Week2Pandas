@@ -1,8 +1,9 @@
-from main import read_file, summary
+from main import read_file, summary, summary_plot
 
 
 def test_read_file():
-    assert read_file('imdb_top_1000.csv')!=FileNotFoundError()
+    df=read_file('imdb_top_1000.csv')
+    assert not df.empty()
     assert len(read_file('imdb_top_1000.csv'))==1000
 
 def test_describe():
