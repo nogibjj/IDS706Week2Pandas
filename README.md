@@ -5,8 +5,12 @@ This is the git template.
 The goal of this project is to apply Pandas in Python
 
 ## Steps
-1. Import data from kaggle
-2. Do data analysis with Pandas
+1. Download data from Kaggle, then upload to Github
+2. Import data into Python using Pandas
+3. Do data analysis using Pandas
+4. Visualize data using Matplotlib
+
+<img width="559" alt="Histogram" src="https://github.com/nogibjj/IDS706Week2Pandas/assets/47194238/e1a723f7-4e67-49de-8b07-bc6eaac09c88">
 
 ## Test for Errors
 
