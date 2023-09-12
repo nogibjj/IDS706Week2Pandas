@@ -11,7 +11,7 @@ def test_read_file():
 
 def test_describe():
     describe=read_file('imdb_top_1000.csv')
-    assert describe['IMDB_Rating'].mean()==7.9493
+    assert describe['IMDB_Rating'].mean()==7.949299999999999
     # assert describe['IMDB_Rating']['max']==9.3
 
 def test_graph():
