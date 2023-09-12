@@ -1,5 +1,7 @@
 from main import read_file, summary, summary_plot
 
+"Test the dataset summary"
+
 
 def test_read_file():
     df=read_file('imdb_top_1000.csv')
