@@ -1,4 +1,5 @@
 from main import read_file, summary, summary_plot
+import matplotlib.pyplot as plt
 
 "Test the dataset summary"
 
